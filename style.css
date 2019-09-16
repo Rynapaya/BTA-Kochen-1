@@ -4,7 +4,7 @@
 
 
 body{
-  background-color: rgb(200,209,192);
+
   margin: 0;
   font-family: Helvetica, Arial, sans-serif;
 }
@@ -12,8 +12,9 @@ body{
 a{
   color: black;
   text-decoration: none;
-  text-transform: uppercase;
+
   font-weight: bold;
+  transition: all 0,35s linear;
   }
 
 ul{
@@ -43,3 +44,130 @@ padding-right: 1rem;
   background: transparent;
 border: none;
 }
+
+
+#hero{
+  background-image: url(img/intro.jpg);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+
+}
+
+
+#hero p{
+  color: #fff
+}
+
+#hero h1{
+  color: #fff;
+}
+
+.button{
+  color: #374A67;
+  background-color: #fff;
+  text-decoration: none;
+  border: 2px #374A67 solid;
+padding: 1rem;
+text-transform: uppercase;
+border-radius: 4px;
+
+margin-top: 1rem;
+display: inline-block;
+
+}
+
+.button:hover{
+  color: #fff;
+  background-color: #374A67;
+
+}
+
+.card{
+text-align: center;
+border-radius: 4px;
+overflow: hidden;
+border: 2px solid #828282;
+margin: 1rem;
+box-shadow: 0px 4px 6px 0px rgba(0,0,0,1);
+margin: 1rem;
+
+}
+
+
+.card img{
+width: 100%;
+
+}
+
+
+.card a{
+  text-decoration: none;
+  color: #000;
+}
+
+.card p a{
+  color: #828282;
+}
+
+.card .button{
+  background: #374A67;
+  color: #fff;
+}
+
+.card .button:hover{
+  background: #fff;
+  color: #374A67;
+  border-color: #374A67;
+
+}
+
+
+
+@media (min-width: 960px) {
+  #main-navigation{
+    display: block;
+
+    }
+    #burger{
+      display: none;
+    }
+
+    #nav{
+    display: flex;
+    }
+
+    #ul{
+    display: flex;
+    }
+
+    nav li{
+      margin-left: 1rem;
+      margin-right: 1rem;
+    }
+
+nav li:last-child{
+  margin-right: 0;
+}
+
+nav li:first-child{
+  background: red;
+}
+
+nav a:hover{
+  color: #596e7a;
+  background: #e6f25c;
+}
+
+.row{
+  display: flex;
+}
+
+
+  }
